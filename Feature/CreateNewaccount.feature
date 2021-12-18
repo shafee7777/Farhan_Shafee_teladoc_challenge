@@ -19,7 +19,7 @@ Then new user added successfully to the table
 Examples:
 |firstname|lastname|username|password|email|
 |Farhan|Shafee|Fshafee|pass1234|farhansf2@gmail.com|
-
+|Jhon|Crunk|JCrank|pass3456|jhoncrank@gmail.com|
 @DeleteUser
 Scenario: able to delete existing user
 

@@ -1,20 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12947" started-at="2021-11-22T03:10:37Z" finished-at="2021-11-22T03:10:49Z">
+  <suite name="Default suite" duration-ms="82737" started-at="2021-12-13T20:46:59Z" finished-at="2021-12-13T20:48:22Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testrunner.TestRunner@5700d6b1]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="12947" started-at="2021-11-22T03:10:37Z" finished-at="2021-11-22T03:10:49Z">
+    <test name="Default test" duration-ms="82737" started-at="2021-12-13T20:46:59Z" finished-at="2021-12-13T20:48:22Z">
       <class name="com.testrunner.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.testrunner.TestRunner@5700d6b1]" name="setUpClass" is-config="true" duration-ms="590" started-at="2021-11-22T03:10:37Z" finished-at="2021-11-22T03:10:37Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.testrunner.TestRunner@5700d6b1]" name="setUpClass" is-config="true" duration-ms="1077" started-at="2021-12-13T20:46:59Z" finished-at="2021-12-13T20:47:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testrunner.TestRunner@5700d6b1]" name="runScenario" duration-ms="12292" started-at="2021-11-22T03:10:37Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-11-22T03:10:49Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testrunner.TestRunner@5700d6b1]" name="runScenario" duration-ms="21887" started-at="2021-12-13T20:47:00Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-12-13T20:47:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["able to add new user"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add a new user to the table]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testrunner.TestRunner@5700d6b1]" name="runScenario" duration-ms="49408" started-at="2021-12-13T20:47:22Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-12-13T20:48:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["able to add new user"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Add a new user to the table]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Fshafee')]"}
+  (Session info: chrome=96.0.4664.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-AEJL1M7', ip: '10.239.120.238', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\UMMULO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50703}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7c432dcbae4ae48256c21018df0e3837
+*** Element info: {Using=xpath, value=//*[contains(text(),'Fshafee')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Fshafee')]"}
+  (Session info: chrome=96.0.4664.93)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-AEJL1M7', ip: '10.239.120.238', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\UMMULO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50703}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7c432dcbae4ae48256c21018df0e3837
+*** Element info: {Using=xpath, value=//*[contains(text(),'Fshafee')]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy18.getText(Unknown Source)
+at com.stepdefinition.NewAccountSteps.new_user_added_successfully_to_the_table(NewAccountSteps.java:86)
+at ✽.new user added successfully to the table(file:///C:/Users/Ummul%20Oara%20Mukta/eclipse-workspace/FixitAutomation/Feature/CreateNewaccount.feature:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.testrunner.TestRunner@5700d6b1]" name="runScenario" duration-ms="10262" started-at="2021-12-13T20:48:11Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-12-13T20:48:22Z">
           <params>
             <param index="0">
               <value>
@@ -30,7 +106,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.testrunner.TestRunner@5700d6b1]" name="tearDownClass" is-config="true" duration-ms="25" started-at="2021-11-22T03:10:49Z" finished-at="2021-11-22T03:10:49Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.testrunner.TestRunner@5700d6b1]" name="tearDownClass" is-config="true" duration-ms="22" started-at="2021-12-13T20:48:22Z" finished-at="2021-12-13T20:48:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

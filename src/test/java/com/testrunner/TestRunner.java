@@ -6,9 +6,9 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 		
 		features="Feature",
-		glue="com.stepdefinition",
+		glue="com.stepdefinition"
 		//tags="@addUser"
-		tags="@DeleteUser"
+		//tags="@DeleteUser"
 )
 
 
